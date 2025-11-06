@@ -102,7 +102,7 @@ Edit `.env` with your MySQL credentials:
 ```env
 DB_HOST=localhost
 DB_PORT=3306
-DB_USER=root
+DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
 DB_NAME=akasa_air_pipeline_task
 
@@ -272,54 +272,30 @@ Logs are stored in `logs/` directory with daily rotation:
 
 Given more time, the following improvements would be considered:
 
-1. **Data Pipeline Automation**
-   - Implement Apache Airflow for workflow orchestration
-   - Schedule daily automated runs
-   - Add data quality checks and alerts
+## Future Enhancements
 
-2. **Performance Optimization**
-   - Implement data partitioning for large datasets
-   - Add caching layer (Redis) for frequently accessed data
-   - Optimize SQL queries with query execution plans
+Given more time, the following improvements would be considered:
 
-3. **Advanced Analytics**
-   - Add predictive analytics for customer behavior
-   - Implement cohort analysis for customer retention
-   - Create interactive dashboards with visualization tools
+1. **Enhanced Data Validation**
+   - Add more business rule validations (e.g., order amount ranges)
+   - Check for duplicate orders before insertion
+   - Validate SKU IDs against a master product list
 
-4. **Monitoring and Alerting**
-   - Add Prometheus metrics for pipeline monitoring
-   - Implement Grafana dashboards for visualization
-   - Set up alerts for pipeline failures or data quality issues
+2. **Improved Reporting**
+   - Generate PDF reports with charts and visualizations
+   - Add trend analysis comparing current vs previous month
+   - Create summary dashboard in HTML format
 
-5. **Data Quality Framework**
-   - Implement Great Expectations for data validation
-   - Add data profiling and anomaly detection
-   - Create data lineage tracking
+3. **Performance Improvements**
+   - Add batch processing for large files
+   - Implement database connection pooling optimization
+   - Cache frequently accessed reference data
 
-6. **Scalability Improvements**
-   - Migrate to distributed processing with Apache Spark
-   - Implement data lake architecture (S3/HDFS)
-   - Add horizontal scaling for database
-
-7. **Security Enhancements**
-   - Implement row-level security in database
-   - Add data encryption at rest and in transit
-   - Integrate with secret management services (AWS Secrets Manager, HashiCorp Vault)
-
-8. **Testing and CI/CD**
-   - Comprehensive unit and integration tests
-   - GitHub Actions for automated testing
-   - Code coverage reporting
-   - Automated deployment pipeline
-
-## Contributing
-
-This is a demonstration project for Akasa Air hiring process.
-
-## License
-
-This project is created for evaluation purposes.
+4. **Unit Testing**
+   - Add pytest test cases for all functions
+   - Test data validation rules
+   - Mock database for faster testing
+   - Add code coverage reports
 
 ## Contact
 
